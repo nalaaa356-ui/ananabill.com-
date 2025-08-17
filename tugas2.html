@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Semua CSS W3Schools</title>
+<style>
+/* === CSS Syntax === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+/* === CSS Colors === */
+h1 {
+  color: darkblue;
+}
+
+/* === Backgrounds === */
+header {
+  background-color: lightblue;
+  padding: 10px;
+  background-image: linear-gradient(to right, lightblue, white);
+}
+
+/* === Borders === */
+.box {
+  border: 2px solid black;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* === Margins & Padding === */
+.margpad {
+  margin: 20px;
+  padding: 15px;
+  background-color: #f0f0f0;
+}
+
+/* === Height/Width === */
+.square {
+  width: 100px;
+  height: 100px;
+  background: orange;
+}
+
+/* === Box Model === */
+.boxmodel {
+  border: 5px solid red;
+  padding: 10px;
+  margin: 20px;
+}
+
+/* === Outline === */
+.outline-demo {
+  outline: 2px dashed green;
+}
+
+/* === Text === */
+.text-demo {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* === Fonts === */
+.font-demo {
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+}
+
+/* === Icons (pakai Unicode) === */
+.icon-demo::before {
+  content: "★ ";
+  color: gold;
+}
+
+/* === Links === */
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Lists === */
+ul {
+  list-style-type: square;
+}
+
+/* === Tables === */
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+td, th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+/* === Display === */
+.inline-demo {
+  display: inline-block;
+  padding: 5px;
+  background: lightgreen;
+}
+
+/* === Max-width === */
+.responsive-box {
+  max-width: 300px;
+  background: lightcoral;
+  padding: 10px;
+}
+
+/* === Position === */
+.relative-box {
+  position: relative;
+  background: lightyellow;
+  padding: 10px;
+}
+.absolute-box {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  color: white;
+  padding: 3px;
+}
+
+/* === Z-index === */
+.zindex-parent {
+  position: relative;
+  height: 100px;
+}
+.z1 {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background: blue;
+  color: white;
+  padding: 5px;
+  z-index: 1;
+}
+.z2 {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  background: green;
+  color: white;
+  padding: 5px;
+  z-index: 2;
+}
+
+/* === Overflow === */
+.overflow-demo {
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+/* === Float === */
+.float-box {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: pink;
+  margin: 5px;
+}
+
+/* === Align === */
+.align-center {
+  text-align: center;
+}
+
+/* === Combinators === */
+div p {
+  color: darkred;
+}
+
+/* === Pseudo-classes === */
+button:hover {
+  background: green;
+  color: white;
+}
+
+/* === Pseudo-elements === */
+p::first-letter {
+  font-size: 200%;
+  color: red;
+}
+
+/* === Opacity === */
+.opacity-demo {
+  opacity: 0.5;
+}
+
+/* === Navigation Bar === */
+nav {
+  background: #333;
+  padding: 5px;
+}
+nav a {
+  color: white;
+  margin: 0 5px;
+}
+nav a:hover {
+  color: yellow;
+}
+
+/* === Dropdowns === */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* === Forms === */
+input, textarea {
+  display: block;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+/* === Units === */
+.units-demo {
+  width: 50%;
+  height: 10vh;
+  background: lightgray;
+}
+
+/* === Specificity & !important === */
+.specific {
+  color: red !important;
+}
+
+/* === Accessibility === */
+a:focus,
+button:focus,
+input:focus {
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Demo Semua CSS W3Schools</h1>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+</nav>
+
+<section class="box">Border Demo</section>
+<section class="margpad">Margin & Padding Demo</section>
+<div class="square"></div>
+<div class="boxmodel">Box Model</div>
+<div class="outline-demo">Outline Demo</div>
+<div class="text-demo">Text Styling</div>
+<div class="font-demo">Font Styling</div>
+<div class="icon-demo">Icon dengan CSS</div>
+<a href="#">Contoh Link</a>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+</ul>
+
+<table>
+<tr><th>Nama</th><th>Usia</th></tr>
+<tr><td>Ani</td><td>20</td></tr>
+<tr><td>Budi</td><td>25</td></tr>
+</table>
+
+<div class="inline-demo">Inline Block</div>
+<div class="responsive-box">Max-width</div>
+
+<div class="relative-box">
+  Relative Box
+  <div class="absolute-box">Absolute</div>
+</div>
+
+<div class="zindex-parent">
+  <div class="z1">Z1</div>
+  <div class="z2">Z2</div>
+</div>
+
+<div class="overflow-demo">Teks panjang sekali sampai overflow scroll...</div>
+
+<div class="float-box"></div>
+<div style="overflow:auto;">
+  <p>Float Text</p>
+</div>
+
+<div class="align-center">Align Center</div>
+
+<div>
+  <p>Selector Combinators</p>
+</div>
+
+<button>Hover Me</button>
+
+<p>Pseudo Element First Letter</p>
+
+<div class="opacity-demo">Opacity 50%</div>
+
+<div class="dropdown">
+  <button>Menu</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+  </div>
+</div>
+
+<form>
+  <label>Email:</label>
+  <input type="email">
+  <label>Pesan:</label>
+  <textarea></textarea>
+  <button type="submit">Kirim</button>
+</form>
+
+<div class="units-demo">Units Demo</div>
+<p class="specific">Specificity dan !important</p>
+
+</body>
+</html>
